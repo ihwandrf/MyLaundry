@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="transaksi.css" />
+    <link rel="stylesheet" href="editcustomer.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <title>MyLaundry Dashboard</title>
@@ -119,28 +119,78 @@
         </div>
       </div>
 
-      <!-- <h3 class="i-name">Transaksi</h3> -->
-      <div class="transaksi-tambah">
-        <h3 class="i-name">Transaksi</h3>
-        <button
-          type="button"
-          class="btn btn-outline-primary active aksi-btn tambah-btn"
-        >
-          Tambah Transaksi
-        </button>
-      </div>
+      <h3 class="i-name">Edit Customer</h3>
+      <p id="p-wajib">*Semua isian wajib diisi, kecuali data yang tidak bisa diganti</p>
 
-      <div class="board">
-        <p id="p-order">List Transaksi</p>
-        <div>
-          <!-- <button
-            type="button"
-            class="btn btn-outline-primary active aksi-btn tambah-btn"
-          >
-            Tambah Transaksi
-          </button> -->
+      <!-- <div class="values">
+        <div class="val-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+          </div>
         </div>
-        <div class="show-search">
+        <div class="val-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+          </div>
+        </div>
+      </div> -->
+      <div class="board">
+        <table width="100%">
+            <tr>
+                <td><label for="">Nama Lengkap</label></td>
+                <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
+            </tr>
+            <tr>
+                <td><label for="">Alamat</label></td>
+                <td><input  type="text" name="nama-lengkap" id="" placeholder="Alamat" ></td>
+            </tr>
+            <tr>
+                <td><label for="">Telepon</label></td>
+                <td><input type="text" name="nama-lengkap" id="" placeholder="Telepon"></td>
+            </tr>
+
+            <!-- <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="email" id="" placeholder="Email"></td>
+            </tr> -->
+
+            <tr>
+                <td></td>
+                <td>
+                <button type="button" class="btn btn-outline-primary active font-kecil">Submit</button>
+                <button type="button" class="btn btn-outline-danger active font-kecil">Batal</button>
+                </td>
+            </tr>
+            
+        </table>
+        <!-- <div class="board-input">
+            <label for="nama-lengkap">Nama Lengkap</label>
+            <input type="Username">
+        </div>
+        <div class="board-input">
+            <label for="username">Username</label>
+            <input type="Username">
+        </div>         -->
+        </div>
+        <!-- <div class="show-search">
           <div>
             <label id="show" for="">Show</label>
             <select name="jumlah-data" id="jumlah-data">
@@ -155,187 +205,7 @@
             <i class="fa fa-search"></i>
             <input type="text" placeholder="Search" name="" id="" />
           </div>
-        </div>
-        <table width="100%">
-          <thead>
-            <tr>
-              <td>No</td>
-              <td>Nama</td>
-              <td>Tanggal Masuk</td>
-              <td>Status</td>
-              <td>Berat(kg)</td>
-              <td>Harga</td>
-              <td>Aksi</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>05/12/2022</td>
-              <td>Baru</td>
-              <td>3.5</td>
-              <td>Rp.17.500</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Edit
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td class="people"></td>
-            </tr>
-          </tbody>
-        </table>
+        </div> -->
       </div>
     </section>
     <script>

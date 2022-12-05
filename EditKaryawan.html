@@ -31,10 +31,10 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="editkaryawan.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>List Administrator</title>
+    <title>MyLaundry Dashboard</title>
   </head>
   <body>
     <section id="menu">
@@ -54,11 +54,11 @@
         <div id="manajemen">
           <div>
             <span></span>
-            <a href="LihatKaryawan.html">Karyawan</a>
+            <a href="#">Karyawan</a>
           </div>
           <div>
             <span></span>
-            <a href="Admin.html">Administrator</a>
+            <a href="#">Administrator</a>
           </div>
         </div>
         <li id="transaksi-li">
@@ -118,15 +118,10 @@
           </div>
         </div>
       </div>
-      <div class="transaksi-tambah">
-        <h3 class="i-name">Administrator</h3>
-        <button
-          type="button"
-          class="btn btn-outline-primary active aksi-btn tambah-btn"
-        >
-          Tambah Admin
-        </button>
-      </div>
+
+      <h3 class="i-name">Edit Karyawan</h3>
+      <p id="p-wajib">*Semua isian wajib diisi</p>
+
       <!-- <div class="values">
         <div class="val-box">
           <i class="fa fa-users"></i>
@@ -158,16 +153,44 @@
         </div>
       </div> -->
       <div class="board">
-        <p id="p-order">List Admin</p>
-        <!-- <div>
-          <button
-            type="button"
-            class="btn btn-outline-primary active aksi-btn tambah-btn"
-          >
-            Tambah Admin
-          </button>
-        </div> -->
-        <div class="show-search">
+        <table width="100%">
+            <tr>
+                <td><label for="">Nama Lengkap</label></td>
+                <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
+            </tr>
+            <tr>
+                <td><label for="">Username</label></td>
+                <td><input  type="username" name="nama-lengkap" id="edit-username" placeholder="Username" disabled></td>
+            </tr>
+            <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" name="nama-lengkap" id="" placeholder="Password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="email" id="" placeholder="Email"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                <button type="button" class="btn btn-outline-primary active font-kecil">Submit</button>
+                <button type="button" class="btn btn-outline-danger active font-kecil">Batal</button>
+                </td>
+            </tr>
+            
+        </table>
+        <!-- <div class="board-input">
+            <label for="nama-lengkap">Nama Lengkap</label>
+            <input type="Username">
+        </div>
+        <div class="board-input">
+            <label for="username">Username</label>
+            <input type="Username">
+        </div>         -->
+        </div>
+        <!-- <div class="show-search">
           <div>
             <label id="show" for="">Show</label>
             <select name="jumlah-data" id="jumlah-data">
@@ -182,166 +205,7 @@
             <i class="fa fa-search"></i>
             <input type="text" placeholder="Search" name="" id="" />
           </div>
-        </div>
-        <table width="100%">
-          <thead>
-            <tr>
-              <td>ID</td>
-              <td>Nama</td>
-              <td>Nomor Telepon</td>
-              <td>Email</td>
-              <td>Aksi</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td class="people"></td>
-            </tr>
-          </tbody>
-        </table>
+        </div> -->
       </div>
     </section>
     <script>

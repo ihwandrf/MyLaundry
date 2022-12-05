@@ -45,7 +45,7 @@
       <div class="items">
         <li>
           <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
+          <a href="index.html" class="menu-text">Dashboard</a>
         </li>
         <li id="manajemen-li" onclick="dropManajemen()">
           <span class="material-symbols-outlined"> manage_accounts </span>
@@ -53,11 +53,11 @@
         </li>
         <div id="manajemen">
           <div>
-            <span></span>
-            <a href="#">Karyawan</a>
+            <!-- <span></span> -->
+            <a href="LihatKaryawan.html">Karyawan</a>
           </div>
           <div>
-            <span></span>
+            <!-- <span></span> -->
             <a href="#">Administrator</a>
           </div>
         </div>
@@ -66,24 +66,16 @@
           <a href="#" class="menu-text">Transaksi</a>
         </li>
         <li>
+          <span class="material-symbols-outlined"> laundry </span>
+          <a href="#" class="menu-text">Paket Laundry</a>
+        </li>
+        <li>
           <span class="material-symbols-outlined"> person </span>
           <a href="#" class="menu-text">Customer</a>
         </li>
         <li>
           <span class="material-symbols-outlined"> summarize </span>
           <a href="#" class="menu-text">Laporan</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
         </li>
       </div>
     </section>
@@ -113,7 +105,7 @@
             </a>
             <a href="#" class="sub-menu-link">
               <span class="material-symbols-outlined"> settings </span>
-              <p>Edit Profile</p>
+              <p>Settings</p>
             </a>
             <a href="#" class="sub-menu-link">
               <span class="material-symbols-outlined"> contact_support </span>
@@ -133,29 +125,29 @@
         <div class="val-box">
           <i class="fa fa-users"></i>
           <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
+            <h3>45</h3>
+            <span>Total Customer</span>
           </div>
         </div>
         <div class="val-box">
-          <i class="fa fa-users"></i>
+          <i class="fa-solid fa-money-check-dollar"></i>
           <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
+            <h3>Rp.14.525.000</h3>
+            <span>Total Pemasukan</span>
           </div>
         </div>
         <div class="val-box">
-          <i class="fa fa-users"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
           <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
+            <h3>690</h3>
+            <span>Total Transaksi</span>
           </div>
         </div>
         <div class="val-box">
-          <i class="fa fa-users"></i>
+          <i class="fa-solid fa-user-gear"></i>
           <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
+            <h3>41</h3>
+            <span>Total Karyawan</span>
           </div>
         </div>
       </div>
@@ -373,6 +365,7 @@
     </section>
     <script>
       let sideBar = document.getElementById("menu");
+      let el_html = document.querySelector("html");
       let subMenu = document.getElementById("subMenu");
       let slideBar = document.getElementById("slide-bar");
       let manajemen = document.getElementById("manajemen-li");
@@ -388,6 +381,14 @@
           subMenu.style.maxHeight = "400px";
         }
       }
+
+      // el_html.addEventListener("click", function () {
+      //   if (is_profil_terbuka) {
+      //     alert();
+      //     subMenu.style.maxHeight = "0px";
+      //     is_profil_terbuka = false;
+      //   }
+      // });
 
       $("#manajemen-li").click(function () {
         $("#manajemen").toggleClass("active2");

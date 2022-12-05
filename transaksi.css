@@ -83,7 +83,13 @@ body {
   background: #253047;
   cursor: pointer;
 }
-#menu .items li:nth-child(1) {
+
+#menu .items li:nth-child(4) {
+  z-index: 1;
+  position: relative;
+}
+
+#menu .items li:nth-child(4) {
   border-left: 4px solid #fff;
 }
 
@@ -250,10 +256,10 @@ body {
 
 .i-name {
   color: #444a53;
-  padding: 30px 30px 0 30px;
+  padding: 0px 30px 0 30px;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .values {
@@ -472,5 +478,17 @@ tbody tr td {
 
 /* Transaksi */
 .tambah-btn {
-  margin-left: 8px;
+  /* margin-left: 8px; */
+  width: auto;
+  height: 50px;
+  background-color: #03a9f5;
+}
+
+.transaksi-tambah {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-right: 37px; */
+  margin-right: 50px;
 }

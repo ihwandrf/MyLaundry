@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="customer.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>MyLaundry Dashboard</title>
+    <title>List Customer</title>
   </head>
   <body>
     <section id="menu">
@@ -66,24 +66,16 @@
           <a href="#" class="menu-text">Transaksi</a>
         </li>
         <li>
+          <span class="material-symbols-outlined"> laundry </span>
+          <a href="#" class="menu-text">Paket Laundry</a>
+        </li>
+        <li>
           <span class="material-symbols-outlined"> person </span>
           <a href="#" class="menu-text">Customer</a>
         </li>
         <li>
           <span class="material-symbols-outlined"> summarize </span>
           <a href="#" class="menu-text">Laporan</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
         </li>
       </div>
     </section>
@@ -113,7 +105,7 @@
             </a>
             <a href="#" class="sub-menu-link">
               <span class="material-symbols-outlined"> settings </span>
-              <p>Edit Profile</p>
+              <p>Settings</p>
             </a>
             <a href="#" class="sub-menu-link">
               <span class="material-symbols-outlined"> contact_support </span>
@@ -126,9 +118,15 @@
           </div>
         </div>
       </div>
-
-      <h3 class="i-name">Customer</h3>
-
+      <div class="transaksi-tambah">
+        <h3 class="i-name">Customer</h3>
+        <button
+          type="button"
+          class="btn btn-outline-primary active aksi-btn tambah-btn"
+        >
+          Tambah Customer
+        </button>
+      </div>
       <!-- <div class="values">
         <div class="val-box">
           <i class="fa fa-users"></i>
@@ -161,14 +159,14 @@
       </div> -->
       <div class="board">
         <p id="p-order">List Customer</p>
-        <div>
+        <!-- <div>
           <button
             type="button"
             class="btn btn-outline-primary active aksi-btn tambah-btn"
           >
             Tambah Customer
           </button>
-        </div>
+        </div> -->
         <div class="show-search">
           <div>
             <label id="show" for="">Show</label>
@@ -192,6 +190,7 @@
               <td>Nama</td>
               <td>Nomor Telepon</td>
               <td>Email</td>
+              <td>Alamat</td>
               <td>Aksi</td>
             </tr>
           </thead>
@@ -201,13 +200,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
-
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -216,12 +221,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -230,12 +242,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -244,12 +263,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -258,12 +284,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -272,12 +305,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -286,12 +326,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -300,12 +347,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -314,12 +368,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>
@@ -328,12 +389,19 @@
               <td>Nabil</td>
               <td>088880088880</td>
               <td>example@email.com</td>
+              <td>Jl. Kaliurang No 69</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Detail
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger active aksi-btn font-kecil"
+                >
+                  Hapus
                 </button>
               </td>
             </tr>

@@ -6,6 +6,41 @@ footer {
 	padding: 86px 0;
 	margin-top: 80px;
 }
+.reviewan img{
+	max-width:70px;
+	padding-right: 10px;
+}
+.reviewan p1{
+	margin-top:10px;
+}
+.mainreview{
+	vertical-align:middle;
+	margin-right : 15%;
+	margin-left : 15%;
+}
+#navbarNav{
+	margin-right:100px;
+}
+.smallsect{
+	box-sizing: border-box;
+	width: 220px;
+	padding: 0px;
+	text-align: left;
+	max-width:220px;
+	height:60px;
+	vertical-align:middle;
+	margin:auto;
+	align-item:center;
+}
+.smallsect img{
+	width:40px;
+}
+.smallsect .img-area{
+	background: #DDFFFF;
+	margin: auto;
+	vertical-align:middle;
+
+}
 .main-btn{
 	padding:15px;
 	padding-left:20px;
@@ -78,8 +113,7 @@ footer {
 	margin-left : 15%;
 	text-align : left;
 }
-.name-job-review{
-	margin-left: 20px;
+.name-job-review{	
 }
 .area3{
 	position: relative;
@@ -221,9 +255,14 @@ footer {
 		margin-left:15px;
 		width:40%;
 	}
-	#hero2{
-		background-image : none;
-		background-color : blue;
+	.mid-banner{
+		width:100%;
+		background: none;
+		background-size:cover;
+		padding:16.875rem 0 9.375rem;
+	}
+	#home2{
+		margin-bottom:20px;
 	}
 	.navbar-nav {
 		text-align: center;

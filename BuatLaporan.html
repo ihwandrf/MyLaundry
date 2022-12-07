@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="buatlaporan.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>MyLaundry Dashboard</title>
+    <title>Buat Laporan</title>
   </head>
   <body>
     <section id="menu">
@@ -131,9 +131,10 @@
         </div>
       </div>
 
+      <div class="i-name-p">
       <h3 class="i-name">Buat Laporan</h3>
       <p id="p-wajib">*Semua isian wajib diisi</p>
-
+    </div>
       <!-- <div class="values">
         <div class="val-box">
           <i class="fa fa-users"></i>
@@ -174,10 +175,10 @@
                 <td><label for="">Deskripsi</label></td>
                 <td><input  type="text" name="deskripsi-laporan" id="deskripsi-laporan" placeholder="Deskripsi" required></td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td><label for="">Telepon</label></td>
                 <td><input type="text" name="nama-lengkap" id="" placeholder="Telepon" required></td>
-            </tr>
+            </tr> -->
             <tr>
               <td><label for="">Filter</label></td>
               <td>
@@ -287,6 +288,10 @@
 
       $("#slide-bar").click(function () {
         $("#menu").toggleClass("active");
+      });
+
+      $("#slide-bar").click(function () {
+        $("#menu").toggleClass("activeWeb");
       });
 
       // alert("Apakah bisa ");

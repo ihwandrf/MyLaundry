@@ -119,9 +119,10 @@
         </div>
       </div>
 
+      <div class="i-name-p">
       <h3 class="i-name">Edit Karyawan</h3>
       <p id="p-wajib">*Semua isian wajib diisi</p>
-
+    </div>
       <!-- <div class="values">
         <div class="val-box">
           <i class="fa fa-users"></i>
@@ -163,13 +164,13 @@
                 <td><input  type="username" name="nama-lengkap" id="edit-username" placeholder="Username" disabled></td>
             </tr>
             <tr>
-                <td><label for="">Password</label></td>
-                <td><input type="password" name="nama-lengkap" id="" placeholder="Password"></td>
+                <td><label for="">Alamat</label></td>
+                <td><input type="text" name="alamat" id="" placeholder="Alamat"></td>
             </tr>
 
             <tr>
-                <td><label for="">Email</label></td>
-                <td><input type="email" name="email" id="" placeholder="Email"></td>
+                <td><label for="">No Telepon</label></td>
+                <td><input type="text" name="No Telepon" id="" placeholder="No Telepon"></td>
             </tr>
 
             <tr>
@@ -248,6 +249,10 @@
 
       $("#slide-bar").click(function () {
         $("#menu").toggleClass("active");
+      });
+
+      $("#slide-bar").click(function () {
+        $("#menu").toggleClass("activeWeb");
       });
 
       // alert("Apakah bisa ");

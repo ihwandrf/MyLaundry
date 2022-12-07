@@ -168,7 +168,7 @@
           </button>
         </div> -->
         <div class="show-search">
-          <div>
+          <div class="show-entries">
             <label id="show" for="">Show</label>
             <select name="jumlah-data" id="jumlah-data">
               <option value="10">10</option>
@@ -454,6 +454,10 @@
 
       $("#slide-bar").click(function () {
         $("#menu").toggleClass("active");
+      });
+
+      $("#slide-bar").click(function () {
+        $("#menu").toggleClass("activeWeb");
       });
 
       // alert("Apakah bisa ");

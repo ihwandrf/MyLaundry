@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="editcustomer.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>MyLaundry Dashboard</title>
+    <title>Edit Customer</title>
   </head>
   <body>
     <section id="menu">
@@ -118,10 +118,11 @@
           </div>
         </div>
       </div>
-
+      
+      <div class="i-name-p">
       <h3 class="i-name">Edit Customer</h3>
       <p id="p-wajib">*Semua isian wajib diisi, kecuali data yang tidak bisa diganti</p>
-
+    </div>
       <!-- <div class="values">
         <div class="val-box">
           <i class="fa fa-users"></i>
@@ -175,8 +176,8 @@
             <tr>
                 <td></td>
                 <td>
-                <button type="button" class="btn btn-outline-primary active font-kecil">Submit</button>
-                <button type="button" class="btn btn-outline-danger active font-kecil">Batal</button>
+                <button type="button" class="btn btn-outline-primary active font-kecil aksi-btn">Submit</button>
+                <button type="button" class="btn btn-outline-danger active font-kecil aksi-btn">Batal</button>
                 </td>
             </tr>
             
@@ -248,6 +249,10 @@
 
       $("#slide-bar").click(function () {
         $("#menu").toggleClass("active");
+      });
+
+      $("#slide-bar").click(function () {
+        $("#menu").toggleClass("activeWeb");
       });
 
       // alert("Apakah bisa ");

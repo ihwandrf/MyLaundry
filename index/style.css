@@ -1,10 +1,19 @@
 body {
 	font-family: 'Teko', sans-serif;
 }
+html{
+	scroll-behavior : smooth;
+}
 footer {
 	background: #97DECE;
 	padding: 86px 0;
 	margin-top: 80px;
+}
+.member-name{
+	font-weight:bold;
+}
+.jobdesk{
+	color:#09B451;
 }
 .reviewan img{
 	max-width:70px;
@@ -21,16 +30,21 @@ footer {
 #navbarNav{
 	margin-right:100px;
 }
+.imgsect{
+	padding-top: 5px;
+    padding-left: 5px;
+}
 .smallsect{
 	box-sizing: border-box;
 	width: 220px;
-	padding: 0px;
 	text-align: left;
 	max-width:220px;
 	height:60px;
 	vertical-align:middle;
 	margin:auto;
 	align-item:center;
+	padding-top: 5px;
+    padding-left: 5px;
 }
 .smallsect img{
 	width:40px;
@@ -42,9 +56,9 @@ footer {
 
 }
 .main-btn{
-	padding:15px;
-	padding-left:20px;
-	padding-right:20px;
+	padding:20px;
+	padding-left:42px;
+	padding-right:42px;
 
 }
 #logoutama{
@@ -227,6 +241,12 @@ footer {
 	margin-right:15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.mid-banner{
+		width:100%;
+		background: none;
+		background-size:cover;
+		padding:16.875rem 0 9.375rem;
+	}
 	.navbar-nav {
 		text-align: center;
 	}
@@ -248,6 +268,12 @@ footer {
 	}
 }
 @media only screen and (max-width: 767px) {
+	.home{
+		margin:auto;
+	}
+	.home h1{
+		color:white;
+	}
 	#logo-footer{
 		width:40%;
 	}
@@ -255,9 +281,15 @@ footer {
 		margin-left:15px;
 		width:40%;
 	}
+	.top-banner{
+		width:100%;
+		background: url(bg-cadangan.png) no-repeat center;
+		background-size:content;
+		padding:16.875rem 0 9.375rem;
+	}
 	.mid-banner{
 		width:100%;
-		background: none;
+		background: none ;
 		background-size:cover;
 		padding:16.875rem 0 9.375rem;
 	}

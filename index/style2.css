@@ -1,0 +1,35 @@
+.inputan{
+    height:74px;
+    border-color: #ADA3A3;
+}
+table{
+    text-align: center;
+    font-weight: bold;
+}
+table img{
+    max-width: 65px;
+    max-height: 50px;
+}
+thead{
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+tbody{
+    color:#009EFF;
+    font-weight: normal;
+}
+td{
+    margin-top:8px;
+    margin-bottom:8px;
+    
+}
+.btn{
+    background-color: #BAF2FE;
+}
+.buttonutama{
+    height: 74px;
+}
+#logoutama{
+	margin-left: 15px;
+}

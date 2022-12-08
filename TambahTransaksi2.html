@@ -31,10 +31,10 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="buatlaporan.css" />
+    <link rel="stylesheet" href="tambahtransaksi2.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>Buat Laporan</title>
+    <title>Tambah Transaksi</title>
   </head>
   <body>
     <section id="menu">
@@ -77,18 +77,6 @@
           <span class="material-symbols-outlined"> summarize </span>
           <a href="#" class="menu-text">Laporan</a>
         </li>
-        <!-- <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li>
-        <li>
-          <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
-        </li> -->
       </div>
     </section>
 
@@ -130,10 +118,10 @@
           </div>
         </div>
       </div>
-
+      
       <div class="i-name-p">
-      <h3 class="i-name">Buat Laporan</h3>
-      <p id="p-wajib">*Semua isian wajib diisi</p>
+      <h3 class="i-name">Tambah Transaksi</h3>
+      <p id="p-wajib">*Semua isian wajib diisi, kecuali data yang tidak bisa diganti</p>
     </div>
       <!-- <div class="values">
         <div class="val-box">
@@ -167,46 +155,71 @@
       </div> -->
       <div class="board">
         <table width="100%">
-            <tr>
-                <td><label for="">Judul Laporan</label></td>
-                <td><input type="text" name="judul-laporan" id="" placeholder="Judul Laporan" required></td>
-            </tr>
-            <tr>
-                <td><label for="">Deskripsi</label></td>
-                <td><input  type="text" name="deskripsi-laporan" id="deskripsi-laporan" placeholder="Deskripsi" required></td>
-            </tr>
+          <tr>
+            <td><label for="">No Order</label></td>
+            <td><select class="stdr-btn unavailable" name="" id="" disabled>
+              <option value="124">124</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+          <td><label for="">ID Customer</label></td>
+          <td><input type="text" name="id" id="" placeholder="ID Customer"></td>
+      </tr>
+          <!-- <tr>
+            <td><label for="">Nama Customer</label></td>
+            <td><select class="stdr-btn" name="" id="" >
+              <option value="-">- Pilih Nama Customer -</option>
+              <option value="Nabil Najmudin">Nabil Najmudin</option>
+              <option value="Jennie Kim">Jennie Kim</option>
+            </select></td>
+        </tr> -->
+        <tr>
+          <td><label for="">Status Pembayaran</label></td>
+          <td><select class="stdr-btn" name="" id="" >
+            <option value="-">- Pilih Status Pembayaran - </option>
+            <option value="Lunas">Lunas</option>
+            <option value="Belum Bayar">Belum Bayar</option>
+          </select></td>
+      </tr>
+        <tr>
+          <td><label for="">Paket</label></td>
+          <td><select class="stdr-btn" name="" id="" >
+            <option value="-">- Pilih Paket -</option>
+            <option value="Lengkap">Lengkap</option>
+            <option value="Cuci">Cuci</option>
+            <option value="Setrika">Setrika</option>
+          </select></td>
+      </tr>
+        <tr>
+          <td><label for="">Berat (kg)</label></td>
+          <td><input type="text" name="berat" id="" placeholder="Berat (kg)"></td>
+      </tr>
+      
+      <!-- <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="email" name="email" id="" placeholder="Email"></td>
+    </tr> -->
+            <!-- <tr>
+                <td><label for="">Nama Lengkap</label></td>
+                <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
+            </tr> -->
+            <!-- <tr>
+                <td><label for="">Alamat</label></td>
+                <td><input  type="text" name="almaat" id="" placeholder="Alamat" ></td>
+            </tr> -->
             <!-- <tr>
                 <td><label for="">Telepon</label></td>
-                <td><input type="text" name="nama-lengkap" id="" placeholder="Telepon" required></td>
+                <td><input type="text" name="telepon" id="" placeholder="Telepon"></td>
             </tr> -->
             <tr>
-              <td><label for="">Filter</label></td>
-              <td>
-                <div class="radio-label">
-                  <input id="radio-btn" type="radio" name="filter" required>
-                  <label for="">Semua</label>
-                  <input id="radio-btn-2" type="radio" name="filter" required>
-                  <label for="">Tanggal</label>
-                </div>
-              </td>
+              <td><label for="">Tanggal Masuk</label></td>
+              <td><input type="date" name="tgl-masuk" id="" placeholder="Tanggal Masuk"></td>
           </tr>
-          <tr>
-            <td>
-              <label for="">Mulai Tanggal</label>
-            </td>
-            <td>
-              <input type="date" name="" id="">
-            </td>
+            <tr>
+              <td><label for="">Tanggal Keluar</label></td>
+              <td><input type="date" name="tgl-keluar" id="" placeholder="Tanggal Keluar"></td>
           </tr>
-          <tr>
-            <td>
-              <label for="">Sampai Tanggal</label>
-            </td>
-            <td>
-              <input type="date" name="" id="">
-            </td>
-          </tr>
-
             <!-- <tr>
                 <td><label for="">Email</label></td>
                 <td><input type="email" name="email" id="" placeholder="Email"></td>
@@ -215,12 +228,13 @@
             <tr>
                 <td></td>
                 <td>
-                <button type="button" class="btn btn-outline-primary active font-kecil aksi-btn">Buat Laporan</button>
+                <button type="button" class="btn btn-outline-primary active font-kecil aksi-btn">Submit</button>
                 <button type="button" class="btn btn-outline-danger active font-kecil aksi-btn">Batal</button>
                 </td>
             </tr>
             
         </table>
+        
         <!-- <div class="board-input">
             <label for="nama-lengkap">Nama Lengkap</label>
             <input type="Username">

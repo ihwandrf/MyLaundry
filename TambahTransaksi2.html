@@ -31,10 +31,10 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="editcustomer.css" />
+    <link rel="stylesheet" href="tambahtransaksi2.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>Tambah Customer</title>
+    <title>Tambah Transaksi</title>
   </head>
   <body>
     <section id="menu">
@@ -87,7 +87,7 @@
         </div>
         <div class="profile">
           <i class="fa fa-bell"> </i>
-          <img src="org1.jpeg" alt="" />
+          <img src="/org1.jpeg" alt="" />
           <span class="material-symbols-outlined" onclick="toggleMenu()">
             expand_more
           </span>
@@ -120,7 +120,7 @@
       </div>
       
       <div class="i-name-p">
-      <h3 class="i-name">Tambah Customer</h3>
+      <h3 class="i-name">Tambah Transaksi</h3>
       <p id="p-wajib">*Semua isian wajib diisi, kecuali data yang tidak bisa diganti</p>
     </div>
       <!-- <div class="values">
@@ -156,30 +156,70 @@
       <div class="board">
         <table width="100%">
           <tr>
-            <td><label for="">Nama Lengkap</label></td>
-            <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
+            <td><label for="">No Order</label></td>
+            <td><select class="stdr-btn unavailable" name="" id="" disabled>
+              <option value="124">124</option>
+            </select>
+            </td>
         </tr>
         <tr>
           <td><label for="">ID Customer</label></td>
-          <td><input type="text" name="identitas" id="" placeholder="ID Customer"></td>
+          <td><input type="text" name="id" id="" placeholder="ID Customer"></td>
       </tr>
-        <!-- <tr>
-          <td><label for="">Password</label></td>
-          <td><input type="text" name="password" id="" placeholder="Password"></td>
-      </tr> -->
+          <!-- <tr>
+            <td><label for="">Nama Customer</label></td>
+            <td><select class="stdr-btn" name="" id="" >
+              <option value="-">- Pilih Nama Customer -</option>
+              <option value="Nabil Najmudin">Nabil Najmudin</option>
+              <option value="Jennie Kim">Jennie Kim</option>
+            </select></td>
+        </tr> -->
+        <tr>
+          <td><label for="">Status Pembayaran</label></td>
+          <td><select class="stdr-btn" name="" id="" >
+            <option value="-">- Pilih Status Pembayaran - </option>
+            <option value="Lunas">Lunas</option>
+            <option value="Belum Bayar">Belum Bayar</option>
+          </select></td>
+      </tr>
+        <tr>
+          <td><label for="">Paket</label></td>
+          <td><select class="stdr-btn" name="" id="" >
+            <option value="-">- Pilih Paket -</option>
+            <option value="Lengkap">Lengkap</option>
+            <option value="Cuci">Cuci</option>
+            <option value="Setrika">Setrika</option>
+          </select></td>
+      </tr>
+        <tr>
+          <td><label for="">Berat (kg)</label></td>
+          <td><input type="text" name="berat" id="" placeholder="Berat (kg)"></td>
+      </tr>
+      
       <!-- <tr>
         <td><label for="">Email</label></td>
         <td><input type="email" name="email" id="" placeholder="Email"></td>
     </tr> -->
-            <tr>
+            <!-- <tr>
+                <td><label for="">Nama Lengkap</label></td>
+                <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
+            </tr> -->
+            <!-- <tr>
                 <td><label for="">Alamat</label></td>
                 <td><input  type="text" name="almaat" id="" placeholder="Alamat" ></td>
-            </tr>
-            <tr>
+            </tr> -->
+            <!-- <tr>
                 <td><label for="">Telepon</label></td>
                 <td><input type="text" name="telepon" id="" placeholder="Telepon"></td>
-            </tr>
-
+            </tr> -->
+            <tr>
+              <td><label for="">Tanggal Masuk</label></td>
+              <td><input type="date" name="tgl-masuk" id="" placeholder="Tanggal Masuk"></td>
+          </tr>
+            <tr>
+              <td><label for="">Tanggal Keluar</label></td>
+              <td><input type="date" name="tgl-keluar" id="" placeholder="Tanggal Keluar"></td>
+          </tr>
             <!-- <tr>
                 <td><label for="">Email</label></td>
                 <td><input type="email" name="email" id="" placeholder="Email"></td>
@@ -194,6 +234,7 @@
             </tr>
             
         </table>
+        
         <!-- <div class="board-input">
             <label for="nama-lengkap">Nama Lengkap</label>
             <input type="Username">

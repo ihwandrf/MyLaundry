@@ -31,10 +31,10 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="editcustomer.css" />
+    <link rel="stylesheet" href="detailtransaksi.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>Tambah Customer</title>
+    <title>Lihat Transaksi</title>
   </head>
   <body>
     <section id="menu">
@@ -87,7 +87,7 @@
         </div>
         <div class="profile">
           <i class="fa fa-bell"> </i>
-          <img src="org1.jpeg" alt="" />
+          <img src="/org1.jpeg" alt="" />
           <span class="material-symbols-outlined" onclick="toggleMenu()">
             expand_more
           </span>
@@ -118,90 +118,31 @@
           </div>
         </div>
       </div>
-      
-      <div class="i-name-p">
-      <h3 class="i-name">Tambah Customer</h3>
-      <p id="p-wajib">*Semua isian wajib diisi, kecuali data yang tidak bisa diganti</p>
-    </div>
-      <!-- <div class="values">
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
+
+      <!-- <h3 class="i-name">Transaksi</h3> -->
+      <div class="transaksi-tambah">
+        <h3 class="i-name">Invoice Pesanan</h3>
+        <!-- <button
+          type="button"
+          class="btn btn-outline-primary active aksi-btn tambah-btn aksi-btn"
+        >
+          Tambah Transaksi
+        </button> -->
+        <div class="no-order">
+          <h3>No Order:</h3>
+          <h3 class="i-name">6923x3</h3>
         </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-      </div> -->
+      </div>
+
       <div class="board">
-        <table width="100%">
-          <tr>
-            <td><label for="">Nama Lengkap</label></td>
-            <td><input type="text" name="nama-lengkap" id="" placeholder="Nama Lengkap"></td>
-        </tr>
-        <tr>
-          <td><label for="">ID Customer</label></td>
-          <td><input type="text" name="identitas" id="" placeholder="ID Customer"></td>
-      </tr>
-        <!-- <tr>
-          <td><label for="">Password</label></td>
-          <td><input type="text" name="password" id="" placeholder="Password"></td>
-      </tr> -->
-      <!-- <tr>
-        <td><label for="">Email</label></td>
-        <td><input type="email" name="email" id="" placeholder="Email"></td>
-    </tr> -->
-            <tr>
-                <td><label for="">Alamat</label></td>
-                <td><input  type="text" name="almaat" id="" placeholder="Alamat" ></td>
-            </tr>
-            <tr>
-                <td><label for="">Telepon</label></td>
-                <td><input type="text" name="telepon" id="" placeholder="Telepon"></td>
-            </tr>
-
-            <!-- <tr>
-                <td><label for="">Email</label></td>
-                <td><input type="email" name="email" id="" placeholder="Email"></td>
-            </tr> -->
-
-            <tr>
-                <td></td>
-                <td>
-                <button type="button" class="btn btn-outline-primary active font-kecil aksi-btn">Submit</button>
-                <button type="button" class="btn btn-outline-danger active font-kecil aksi-btn">Batal</button>
-                </td>
-            </tr>
-            
-        </table>
-        <!-- <div class="board-input">
-            <label for="nama-lengkap">Nama Lengkap</label>
-            <input type="Username">
-        </div>
-        <div class="board-input">
-            <label for="username">Username</label>
-            <input type="Username">
-        </div>         -->
+        <div class=""></div>
+        <div>
+          <!-- <button
+            type="button"
+            class="btn btn-outline-primary active aksi-btn tambah-btn"
+          >
+            Tambah Transaksi
+          </button> -->
         </div>
         <!-- <div class="show-search">
           <div>
@@ -219,6 +160,116 @@
             <input type="text" placeholder="Search" name="" id="" />
           </div>
         </div> -->
+        <table class="table-1" width="100%">
+          <!-- <thead>
+            <tr class="baris-invoice">
+              <td colspan="3">Customer</td>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>Nama</td>
+              <td>Nabil Najmudin</td>
+            </tr>
+            <tr>
+              <td>No Telepon</td>
+              <td>08888008880</td>
+            </tr>
+            <tr>
+              <td>Alamat</td>
+              <td>Kediri</td>
+            </tr>
+            <tr>
+              <td>Order Masuk</td>
+              <td>07-12-2022</td>
+            </tr>
+            <tr>
+              <td>Diambil pada</td>
+              <td>08-12-2022</td>
+            </tr>
+            <tr>
+              <td>Durasi Kerja</td>
+              <td>1 Hari</td>
+            </tr>
+            <!-- <tr>
+              <td>Jenis Paket</td>
+              <td>Lengkap</td>
+            </tr> -->
+            <!-- <thead>
+              <tr class="baris-order">
+                <td colspan="3">Order</td>
+              </tr>
+            </thead> -->
+            <!-- <thead>
+              <tr class="baris-abu">
+                <td>Berat (kg)</td>
+                <td>Harga per kg</td>
+                <td>Total Bayar</td>
+              </tr>
+            </thead> -->
+
+            <!-- <tr>
+              <td>1</td>
+              <td>Nabil</td>
+            </tr> -->
+            <!-- <tr>
+              <td>2 Kg</td>
+              <td>Rp8.000</td>
+              <td>Rp16.000</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Nabil</td>
+            </tr> -->
+          </tbody>
+          <!-- <tbody>
+            <tr>
+              <td class="people"></td>
+            </tr>
+          </tbody> -->
+        </table>
+        <table class="table-2" width="100%">
+          <thead>
+            <tr>
+              <td>No</td>
+              <td>Nama Pesanan</td>
+              <td>Tgl Order</td>
+              <td>Paket Laundry</td>
+              <td>Berat</td>
+              <td>Harga/kg</td>
+              <td>Subtotal</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Laundry Baju Kuliah</td>
+              <td>07/12/2022</td>
+              <td>Lengkap</td>
+              <td>4 kg</td>
+              <td>Rp8.000</td>
+              <td>Rp32.000</td>
+            </tr>
+            <tr>
+              <td colspan="6">Total Pesanan</td>
+              <td>Rp32.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buat-invoice">
+          <button
+            type="button"
+            class="btn btn-outline-primary active aksi-btn tambah-btn aksi-btn"
+          >
+            Buat Invoice
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-danger active aksi-btn tambah-btn aksi-btn"
+          >
+            Batal
+          </button>
+        </div>
       </div>
     </section>
     <script>

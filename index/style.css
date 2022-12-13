@@ -9,6 +9,18 @@ footer {
 	padding: 86px 0;
 	margin-top: 80px;
 }
+#home2 h1, #home2 p{
+	margin-left:100px;
+}
+#logofooter{
+	max-width: 150px;
+}
+.statusreviewer{
+	color:#09B451;
+}
+.reviewer{
+	font-weight:bold;
+}
 .member-name{
 	font-weight:bold;
 }
@@ -26,40 +38,45 @@ footer {
 	vertical-align:middle;
 	margin-right : 15%;
 	margin-left : 15%;
+	background: url(src/img/vector1.png) no-repeat center;
+	background-size: 70%;
 }
 #navbarNav{
 	margin-right:100px;
 }
 .imgsect{
-	padding-top: 5px;
-    padding-left: 5px;
+
+}
+.fitursect{
+	border-radius: 90px 90px 90px 90px;
 }
 .smallsect{
 	box-sizing: border-box;
-	width: 220px;
 	text-align: left;
-	max-width:220px;
+	max-width:200px;
 	height:60px;
 	vertical-align:middle;
 	margin:auto;
 	align-item:center;
 	padding-top: 5px;
-    padding-left: 5px;
+	font-weight:bold;
 }
 .smallsect img{
-	width:40px;
+	width:60px;
 }
 .smallsect .img-area{
-	background: #DDFFFF;
+	background: #Efefef;
 	margin: auto;
 	vertical-align:middle;
+	padding:5px;
+	border-radius: 120px 120px 120px 120px;
 
 }
 .main-btn{
 	padding:20px;
 	padding-left:42px;
 	padding-right:42px;
-
+	display:block;
 }
 #logoutama{
 	margin-left:15px;
@@ -134,13 +151,13 @@ footer {
 }
 .top-banner{
 	width:100%;
-	background: url(bg-1.png) no-repeat center;
+	background: url(src/img/bg-1.png) no-repeat center;
 	background-size:cover;
 	padding:16.875rem 0 9.375rem;
 }
 .mid-banner{
 	width:100%;
-	background: url(bg-2.png) no-repeat center;
+	background: url(src/img/bg-2-2.png) no-repeat center;
 	background-size:cover;
 	padding:16.875rem 0 9.375rem;
 }
@@ -157,7 +174,7 @@ footer {
 	letter-spacing: 2px;
 }
 .navbar-brand span {
-	color: green;
+	color: black;
 }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
 	color: #000;
@@ -244,14 +261,13 @@ footer {
 	.mid-banner{
 		width:100%;
 		background: none;
-		background-size:cover;
-		padding:16.875rem 0 9.375rem;
+		padding: 0px;
 	}
 	.navbar-nav {
 		text-align: center;
 	}
 	.navbar-collapse {
-		background: green;
+		background: white;
 	}
 	.carousel-caption {
 		bottom: 370px;
@@ -260,7 +276,7 @@ footer {
 		width: 100%;
 	}
 	.navbar-collapse .nav-link {
-		color: #fff !important;
+		color: black !important;
 	}
 	.carousel-caption {
 		bottom: 0;
@@ -274,6 +290,16 @@ footer {
 	.home h1{
 		color:white;
 	}
+	.headerutama{
+		text-align:center;
+	}
+	.descutama{
+		display:block;
+	}
+	.main-btn{
+		display:block;
+		margin:auto;
+	}
 	#logo-footer{
 		width:40%;
 	}
@@ -283,15 +309,14 @@ footer {
 	}
 	.top-banner{
 		width:100%;
-		background: url(bg-cadangan.png) no-repeat center;
+		background: url(src/img/bg-cadangan.png) no-repeat center;
 		background-size:content;
 		padding:16.875rem 0 9.375rem;
 	}
 	.mid-banner{
 		width:100%;
-		background: none ;
-		background-size:cover;
-		padding:16.875rem 0 9.375rem;
+		background: none;
+		padding:0px;
 	}
 	#home2{
 		margin-bottom:20px;
@@ -300,10 +325,10 @@ footer {
 		text-align: center;
 	}
 	.navbar-collapse {
-		background: green;
+		background: white;
 	}
 	.navbar-collapse .nav-link {
-		color: #fff !important;
+		color: black !important;
 	}
 	.carousel-caption {
 		bottom: 0;

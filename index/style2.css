@@ -5,10 +5,14 @@
 table{
     text-align: center;
     font-weight: bold;
+    
+}
+table td, th{
+    vertical-align: middle;
 }
 table img{
-    max-width: 65px;
-    max-height: 50px;
+    max-width: 50px;
+    max-height: 45px;
 }
 thead{
     border-bottom: 1px solid black;
@@ -28,7 +32,10 @@ td{
     background-color: #BAF2FE;
 }
 .buttonutama{
+    border-radius: 120px 120px 120px 120px;
     height: 74px;
+    background-color: #D9D9D9;
+    font-weight: bold;
 }
 #logoutama{
 	margin-left: 15px;

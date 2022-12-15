@@ -31,10 +31,10 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="customer.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>List Customer</title>
+    <title>MyLaundry Dashboard</title>
   </head>
   <body>
     <section id="menu">
@@ -45,7 +45,7 @@
       <div class="items">
         <li>
           <span class="material-icons"> pie_chart </span>
-          <a href="#" class="menu-text">Dashboard</a>
+          <a href="index.html" class="menu-text">Dashboard</a>
         </li>
         <li id="manajemen-li" onclick="dropManajemen()">
           <span class="material-symbols-outlined"> manage_accounts </span>
@@ -53,11 +53,11 @@
         </li>
         <div id="manajemen">
           <div>
-            <span></span>
-            <a href="#">Karyawan</a>
+            <!-- <span></span> -->
+            <a href="LihatKaryawan.html">Karyawan</a>
           </div>
           <div>
-            <span></span>
+            <!-- <span></span> -->
             <a href="#">Administrator</a>
           </div>
         </div>
@@ -96,7 +96,7 @@
           <div class="sub-menu">
             <div class="user-info">
               <img src="org1.jpeg" alt="" />
-              <h2>Jennie Kim</h2>
+              <h2><?php $_SESSION['name']?></h2>
             </div>
             <hr />
             <a href="#" class="sub-menu-link">
@@ -118,57 +118,43 @@
           </div>
         </div>
       </div>
-      <div class="transaksi-tambah">
-        <h3 class="i-name">Customer</h3>
-        <button
-          type="button"
-          class="btn btn-outline-primary active aksi-btn tambah-btn"
-        >
-          Tambah Customer
-        </button>
+
+      <h3 class="i-name">Dashboard</h3>
+
+      <div class="values">
+        <div class="val-box">
+          <i class="fa fa-users"></i>
+          <div>
+            <h3>45</h3>
+            <span>Total Customer</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <div>
+            <h3>Rp.14.525.000</h3>
+            <span>Total Pemasukan</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <div>
+            <h3>690</h3>
+            <span>Total Transaksi</span>
+          </div>
+        </div>
+        <div class="val-box">
+          <i class="fa-solid fa-user-gear"></i>
+          <div>
+            <h3>41</h3>
+            <span>Total Karyawan</span>
+          </div>
+        </div>
       </div>
-      <!-- <div class="values">
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>8,267</h3>
-            <span>New Users</span>
-          </div>
-        </div>
-      </div> -->
       <div class="board">
-        <p id="p-order">List Customer</p>
-        <!-- <div>
-          <button
-            type="button"
-            class="btn btn-outline-primary active aksi-btn tambah-btn"
-          >
-            Tambah Customer
-          </button>
-        </div> -->
+        <p id="p-order">List order</p>
         <div class="show-search">
-          <div class="show-entries">
+          <div>
             <label id="show" for="">Show</label>
             <select name="jumlah-data" id="jumlah-data">
               <option value="10">10</option>
@@ -186,222 +172,185 @@
         <table width="100%">
           <thead>
             <tr>
-              <td>ID</td>
-              <td>Nama</td>
-              <td>Nomor Telepon</td>
-              <td>Email</td>
-              <td>Alamat</td>
+              <td>No</td>
+              <td>Tanggal Transaksi</td>
+              <td>Customer</td>
+              <td>Paket</td>
+              <td>Pembayaran</td>
+              <td>Status Order</td>
+              <td>Total</td>
               <td>Aksi</td>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
+
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Nabil</td>
-              <td>088880088880</td>
-              <td>example@email.com</td>
-              <td>Jl. Kaliurang No 69</td>
+              <td>20 Desember 2022</td>
+              <td>Johan</td>
+              <td>Cuci & setrika</td>
+              <td class="Lunas">Lunas</td>
+              <td>Baru</td>
+              <td>Rp.180.000</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-outline-primary active aksi-btn"
                 >
-                  Edit
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-danger active aksi-btn font-kecil"
-                >
-                  Hapus
+                  Detail
                 </button>
               </td>
             </tr>
@@ -416,6 +365,7 @@
     </section>
     <script>
       let sideBar = document.getElementById("menu");
+      let el_html = document.querySelector("html");
       let subMenu = document.getElementById("subMenu");
       let slideBar = document.getElementById("slide-bar");
       let manajemen = document.getElementById("manajemen-li");
@@ -431,6 +381,14 @@
           subMenu.style.maxHeight = "400px";
         }
       }
+
+      // el_html.addEventListener("click", function () {
+      //   if (is_profil_terbuka) {
+      //     alert();
+      //     subMenu.style.maxHeight = "0px";
+      //     is_profil_terbuka = false;
+      //   }
+      // });
 
       $("#manajemen-li").click(function () {
         $("#manajemen").toggleClass("active2");

@@ -539,3 +539,7 @@ tbody tr td {
   /* margin-right: 37px; */
   /* margin-right: 50px; */
 }
+
+#edit_no_order {
+  cursor: not-allowed;
+}

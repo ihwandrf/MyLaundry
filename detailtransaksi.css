@@ -644,3 +644,9 @@ table tbody tr td:first-child {
 table {
   width: 100%;
 }
+
+#input-status-pesanan {
+  width: 100%;
+  background-color: #f8f8f8;
+  /* border: 1px solid black; */
+}

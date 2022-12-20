@@ -1,364 +1,369 @@
 body {
-	font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
-html{
-	scroll-behavior : smooth;
+html {
+  scroll-behavior: smooth;
 }
 footer {
-	background: #97DECE;
-	padding: 86px 0;
-	margin-top: 80px;
+  background: #97dece;
+  padding: 86px 0;
+  margin-top: 80px;
 }
-#home2 h1, #home2 p{
-	margin-left:100px;
+#home2 h1,
+#home2 p {
+  margin-left: 100px;
 }
-#logofooter{
-	max-width: 150px;
+#logofooter {
+  max-width: 150px;
 }
-.statusreviewer{
-	color:#09B451;
+.statusreviewer {
+  color: #09b451;
 }
-.reviewer{
-	font-weight:bold;
+.reviewer {
+  font-weight: bold;
 }
-.member-name{
-	font-weight:bold;
+.member-name {
+  font-weight: bold;
 }
-.jobdesk{
-	color:#09B451;
+.jobdesk {
+  color: #09b451;
 }
-.reviewan img{
-	max-width:70px;
-	padding-right: 10px;
+.reviewan img {
+  max-width: 70px;
+  padding-right: 10px;
 }
-.reviewan p1{
-	margin-top:10px;
+.reviewan p1 {
+  margin-top: 10px;
 }
-.mainreview{
-	vertical-align:middle;
-	margin-right : 15%;
-	margin-left : 15%;
-	background: url(src/img/vector1.png) no-repeat center;
-	background-size: 70%;
+.mainreview {
+  vertical-align: middle;
+  margin-right: 15%;
+  margin-left: 15%;
+  background: url(src/img/vector1.png) no-repeat center;
+  background-size: 70%;
 }
-#navbarNav{
-	margin-right:100px;
+#navbarNav {
+  margin-right: 100px;
 }
-.imgsect{
-
+.imgsect {
 }
-.fitursect{
-	border-radius: 90px 90px 90px 90px;
+.fitursect {
+  border-radius: 90px 90px 90px 90px;
 }
-.smallsect{
-	box-sizing: border-box;
-	text-align: left;
-	max-width:200px;
-	height:60px;
-	vertical-align:middle;
-	margin:auto;
-	align-item:center;
-	padding-top: 5px;
-	font-weight:bold;
+.smallsect {
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 200px;
+  height: 60px;
+  vertical-align: middle;
+  margin: auto;
+  align-item: center;
+  padding-top: 5px;
+  font-weight: bold;
 }
-.smallsect img{
-	width:60px;
+.smallsect img {
+  width: 60px;
 }
-.smallsect .img-area{
-	background: #Efefef;
-	margin: auto;
-	vertical-align:middle;
-	padding:5px;
-	border-radius: 120px 120px 120px 120px;
-
+.smallsect .img-area {
+  background: #efefef;
+  margin: auto;
+  vertical-align: middle;
+  padding: 5px;
+  border-radius: 120px 120px 120px 120px;
 }
-.main-btn{
-	padding:20px;
-	padding-left:42px;
-	padding-right:42px;
-	display:block;
+.main-btn {
+  padding: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+  display: block;
 }
-#logoutama{
-	margin-left:15px;
+#logoutama {
+  margin-left: 15px;
 }
-.card-profile{
-	size:100px;
-	
+.card-profile {
+  size: 100px;
 }
 .single-content {
-	text-align: center;
-	padding: 115px 0;
+  text-align: center;
+  padding: 115px 0;
 }
 .single-box p {
-	color: #fff;
-	line-height: 1.9;
+  color: #fff;
+  line-height: 1.9;
 }
 .single-box h3 {
-	font-size: 16px;
-	font-weight: 700;
-	color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
 }
 .single-box .card-area i {
-	color: #ffffff;
-	font-size: 20px;
-	margin-right: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
 }
 .single-box ul {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .single-box ul li a {
-	text-decoration: none;
-	color: #fff;
-	line-height: 2.5;
-	font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5;
+  font-weight: 100;
 }
 .single-box h2 {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 #basic-addon2 {
-	background: #fe1e4f;
-	color: #fff;
+  background: #fe1e4f;
+  color: #fff;
 }
 .socials i {
-	font-size: 18px;
-	margin-right: 15px;
+  font-size: 18px;
+  margin-right: 15px;
 }
-.card-over-text{
-	position: absolute;
-	margin-top: -60%;
-	margin-left: 40%;
-	text-align: center;
+.card-over-text {
+  position: absolute;
+  margin-top: -60%;
+  margin-left: 40%;
+  text-align: center;
 }
-.img-area{
-	position: relative;
+.img-area {
+  position: relative;
 }
-.card-body{
-	position: relative;
+.card-body {
+  position: relative;
 }
-.card-text{
-	margin : 20px;
-	margin-right : 15%;
-	margin-left : 15%;
-	text-align : left;
+.card-text {
+  margin: 20px;
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: left;
 }
-.name-job-review{	
+.name-job-review {
 }
-.area3{
-	position: relative;
+.area3 {
+  position: relative;
 }
-.top-banner{
-	width:100%;
-	background: url(src/img/bg-1.png) no-repeat center;
-	background-size:cover;
-	padding:16.875rem 0 9.375rem;
+.top-banner {
+  width: 100%;
+  background: url(src/img/bg-1.png) no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
 }
-.mid-banner{
-	width:100%;
-	background: url(src/img/bg-2-2.png) no-repeat center;
-	background-size:cover;
-	padding:16.875rem 0 9.375rem;
+.mid-banner {
+  width: 100%;
+  background: url(src/img/bg-2-2.png) no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
 }
 .navbar-nav a {
-	font-size: 15px;
-	text-transform: uppercase;
-	font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .navbar-light .navbar-brand {
-	color: #000;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 .navbar-brand span {
-	color: black;
+  color: black;
 }
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-	color: #000;
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #000;
+  color: #000;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #000;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
 }
 .w-100 {
-	height: 100vh;
+  height: 100vh;
 }
 .navbar-toggler {
-	padding: 1px 5px;
-	font-size: 18px;
-	line-height: 0.3;
-	background: #fff;
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  background: #fff;
 }
 .carousel-item {
-	height: 100vh;
-	min-height: 300px;
-	background-color: #f7f5eb;
+  height: 100vh;
+  min-height: 300px;
+  background-color: #f7f5eb;
 }
 .carousel-caption {
-	bottom: 0;
-	z-index: 2;
-	text-align: left;
+  bottom: 0;
+  z-index: 2;
+  text-align: left;
 }
 .carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-	color: #262626;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  color: #262626;
 }
 .carousel-caption p {
-	font-size: 18px;
-	line-height: 1.9;
-	color: #262626;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #262626;
 }
 .banner-info .btn {
-	padding: 10px 60px;
-	font-size: 30px;
-	text-transform: uppercase;
-	color: #ffff;
-	background: green;
+  padding: 10px 60px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffff;
+  background: green;
 }
 .banner-info {
-	padding-top: 25%;
+  padding-top: 25%;
 }
 .imgBox img {
-	width: 650px;
+  width: 650px;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-	height: 80px;
-	width: 80px;
-	outline: black;
-	background-size: 100%, 100%;
-	border-radius: 50%;
-	background-image: none;
-	color: #fff;
-	background: green;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+  color: #fff;
+  background: green;
 }
 .carousel-control-next-icon:after {
-	content: '->';
-	font-size: 55px;
-	color: #fff;
+  content: "->";
+  font-size: 55px;
+  color: #fff;
 }
 .carousel-control-prev-icon:after {
-	content: '';
-	font-size: 55px;
-	color: #fff;
+  content: "";
+  font-size: 55px;
+  color: #fff;
 }
 .carousel-indicators [data-bs-target] {
-	background-color: green;
+  background-color: green;
 }
 .navbar-light .navbar-toggler {
-	color: #FFF;
-	border-color: transparent;
-	margin-right:15px;
+  color: #fff;
+  border-color: transparent;
+  margin-right: 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.mid-banner{
-		width:100%;
-		background: none;
-		padding: 0px;
-	}
-	.navbar-nav {
-		text-align: center;
-	}
-	.navbar-collapse {
-		background: white;
-	}
-	.carousel-caption {
-		bottom: 370px;
-	}
-	.carousel-caption p {
-		width: 100%;
-	}
-	.navbar-collapse .nav-link {
-		color: black !important;
-	}
-	.carousel-caption {
-		bottom: 0;
-		text-align: center;
-	}
+  .mid-banner {
+    width: 100%;
+    background: none;
+    padding: 0px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-collapse {
+    background: white;
+  }
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+  .navbar-collapse .nav-link {
+    color: black !important;
+  }
+  .carousel-caption {
+    bottom: 0;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 767px) {
-	.home{
-		margin:auto;
-	}
-	.home h1{
-		color:white;
-	}
-	.headerutama{
-		text-align:center;
-	}
-	.descutama{
-		display:block;
-	}
-	.main-btn{
-		display:block;
-		margin:auto;
-	}
-	#logo-footer{
-		width:40%;
-	}
-	#logoutama{
-		margin-left:15px;
-		width:40%;
-	}
-	.top-banner{
-		width:100%;
-		background: url(src/img/bg-cadangan.png) no-repeat center;
-		background-size:content;
-		padding:16.875rem 0 9.375rem;
-	}
-	.mid-banner{
-		width:100%;
-		background: none;
-		padding:0px;
-	}
-	#home2{
-		margin-bottom:20px;
-	}
-	.navbar-nav {
-		text-align: center;
-	}
-	.navbar-collapse {
-		background: white;
-	}
-	.navbar-collapse .nav-link {
-		color: black !important;
-	}
-	.carousel-caption {
-		bottom: 0;
-		text-align: center;
-	}
-	.carousel-caption h5 {
-		font-size: 17px;
-	}
-	.carousel-caption p {
-		width: 100%;
-		line-height: 1.6;
-		font-size: 12px;
-	}
-	.banner-info .btn {
-		padding: 0 15px;
-		font-size: 20px;
-	}
-	.imgBox .img-fluid {
-		max-width: 80%;
-		height: auto;
-	}
-	.carousel-control-prev-icon, .carousel-control-next-icon {
-		height: 50px;
-		width: 50px;
-	}
-	.carousel-control-next-icon:after {
-		font-size: 30px;
-	}
-	.carousel-control-prev-icon:after {
-		font-size: 30px;
-	}
-	
+  .home {
+    margin: auto;
+  }
+  .home h1 {
+    color: white;
+  }
+  .headerutama {
+    text-align: center;
+  }
+  .descutama {
+    display: block;
+  }
+  .main-btn {
+    display: block;
+    margin: auto;
+  }
+  #logo-footer {
+    width: 40%;
+  }
+  #logoutama {
+    margin-left: 15px;
+    width: 40%;
+  }
+  .top-banner {
+    width: 100%;
+    background: url(src/img/bg-cadangan.png) no-repeat center;
+    background-size: content;
+    padding: 16.875rem 0 9.375rem;
+  }
+  .mid-banner {
+    width: 100%;
+    background: none;
+    padding: 0px;
+  }
+  #home2 {
+    margin-bottom: 20px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-collapse {
+    background: white;
+  }
+  .navbar-collapse .nav-link {
+    color: black !important;
+  }
+  .carousel-caption {
+    bottom: 0;
+    text-align: center;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+  .banner-info .btn {
+    padding: 0 15px;
+    font-size: 20px;
+  }
+  .imgBox .img-fluid {
+    max-width: 80%;
+    height: auto;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .carousel-control-next-icon:after {
+    font-size: 30px;
+  }
+  .carousel-control-prev-icon:after {
+    font-size: 30px;
+  }
+}
+
+#mulai {
+  color: #000;
 }

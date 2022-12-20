@@ -496,6 +496,7 @@ tbody tr td {
 
   .show-search {
     margin: 10px 10px;
+    /* width: 15%; */
     /* gap: 300px; */
     gap: 85%;
     display: flex;

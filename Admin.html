@@ -99,19 +99,19 @@
               <h2>Jennie Kim</h2>
             </div>
             <hr />
-            <a href="#" class="sub-menu-link">
+            <a href="" class="sub-menu-link tdk-ada">
               <span class="material-symbols-outlined"> manage_accounts </span>
               <p>Edit Profile</p>
             </a>
-            <a href="#" class="sub-menu-link">
+            <a href="#" class="sub-menu-link tdk-ada">
               <span class="material-symbols-outlined"> settings </span>
               <p>Settings</p>
             </a>
-            <a href="#" class="sub-menu-link">
+            <a href="#" class="sub-menu-link tdk-ada">
               <span class="material-symbols-outlined"> contact_support </span>
               <p>Help & Support</p>
             </a>
-            <a href="#" class="sub-menu-link">
+            <a href="#" class="sub-menu-link tdk-ada">
               <span class="material-symbols-outlined"> logout </span>
               <p>Logout</p>
             </a>
@@ -388,6 +388,12 @@
 
       $("#slide-bar").click(function () {
         $("#menu").toggleClass("activeWeb");
+      });
+
+      const tdk_ada = document.querySelector(".tdk-ada");
+
+      tdk_ada.addEventListener("click", function () {
+        document.location.href = "TidakAda.php";
       });
 
       // alert("Apakah bisa ");

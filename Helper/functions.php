@@ -33,5 +33,3 @@ function getName($n)
 
     return $randomString;
 }
-
-echo getName($n);

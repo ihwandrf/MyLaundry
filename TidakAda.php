@@ -36,7 +36,7 @@ $nama = $hasilNama->fetch();
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="tidakada.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <title>Page not found</title>
 </head>
@@ -96,251 +96,42 @@ $nama = $hasilNama->fetch();
       </div>
     </div>
 
-    <!-- <h3 class="i-name">Dashboard</h3>
-
-      <div class="values">
-        <div class="val-box">
-          <i class="fa fa-users"></i>
-          <div>
-            <h3>45</h3>
-            <span>Total Customer</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa-solid fa-money-check-dollar"></i>
-          <div>
-            <h3>Rp.14.525.000</h3>
-            <span>Total Pemasukan</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <div>
-            <h3>690</h3>
-            <span>Total Transaksi</span>
-          </div>
-        </div>
-        <div class="val-box">
-          <i class="fa-solid fa-user-gear"></i>
-          <div>
-            <h3>41</h3>
-            <span>Total Karyawan</span>
-          </div>
-        </div>
-      </div>
-      <div class="board">
-        <p id="p-order">List order</p>
-        <div class="show-search">
-          <div>
-            <label id="show" for="">Show</label>
-            <select name="jumlah-data" id="jumlah-data">
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-            </select>
-            <label id="show" for="">entries</label>
-          </div>
-          <div class="search">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Search" name="" id="" />
-          </div>
-        </div> -->
-    <!-- <table width="100%">
-          <thead>
-            <tr>
-              <td>No</td>
-              <td>Tanggal Transaksi</td>
-              <td>Customer</td>
-              <td>Paket</td>
-              <td>Pembayaran</td>
-              <td>Status Order</td>
-              <td>Total</td>
-              <td>Aksi</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>20 Desember 2022</td>
-              <td>Johan</td>
-              <td>Cuci & setrika</td>
-              <td class="Lunas">Lunas</td>
-              <td>Baru</td>
-              <td>Rp.180.000</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary active aksi-btn"
-                >
-                  Detail
-                </button>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td class="people"></td>
-            </tr>
-          </tbody>
-        </table> -->
     </div>
   </section>
   <script>
+    // JQUERY
+    $(document).ready(function() {
+      // Logout
+      $("#logout").click(function() {
+        Swal.fire({
+          title: 'Apakah Anda yakin?',
+          text: "Anda akan keluar dari halaman ini!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, keluar saja!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            $.ajax({
+              url: "Logout.php",
+              type: "POST",
+              success: function() {
+                Swal.fire(
+                  'Logout berhasil!',
+                  'Anda akan keluar dari halaman karyawan.',
+                  'success'
+                ).then(() => {
+                  window.location.href = "login.php";
+                })
+              }
+            })
+          }
+        })
+      })
+    })
+
+
     let sideBar = document.getElementById("menu");
     let el_html = document.querySelector("html");
     let subMenu = document.getElementById("subMenu");
@@ -359,33 +150,12 @@ $nama = $hasilNama->fetch();
       }
     }
 
-    // el_html.addEventListener("click", function () {
-    //   if (is_profil_terbuka) {
-    //     alert();
-    //     subMenu.style.maxHeight = "0px";
-    //     is_profil_terbuka = false;
-    //   }
-    // });
 
     $("#manajemen-li").click(function() {
       $("#manajemen").toggleClass("active2");
     });
 
-    // function toggleSideBar() {
-    //   sideBar.style.width = "40px";
-    // }
 
-    // function toggleSideBar() {
-    //   if (x.matches) {
-    //     if (sideBar.style.left === "-220px") {
-    //       alert("True");
-    //       sideBar.style.left == "0px";
-    //     } else if (sideBar.style.left == "0px") {
-    //       sideBar.style.left == "-220px";
-    //     }
-    //   }
-    // console.log(sideBar.style.left);
-    // }
 
     $("#slide-bar").click(function() {
       $("#menu").toggleClass("active");
@@ -409,9 +179,13 @@ $nama = $hasilNama->fetch();
     back_beranda.addEventListener("click", function() {
       document.location.href = "dashboard.php";
     })
-
-    // alert("Apakah bisa ");
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.js"></script>
+
+  <!-- BS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 
 </html>

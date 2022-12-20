@@ -223,10 +223,10 @@ $no = 1;
             <td>Customer</td>
             <td>Berat(kg)</td>
             <td>Paket</td>
-            <td>Pembayaran</td>
             <td>Status Order</td>
+            <td>Pembayaran</td>
             <td>Total</td>
-            <td>Aksi</td>
+            <!-- <td>Aksi</td> -->
           </tr>
         </thead>
         <tbody>
@@ -242,11 +242,11 @@ $no = 1;
               <td><?php echo $row['status_bayar'] ?></td>
               <td><?php $total = ($row['berat']) * ($row['harga']);
                   echo rupiah($total) ?></td>
-              <td>
+              <!-- <td>
                 <button type="button" class="btn btn-outline-primary active aksi-btn">
                   Detail
                 </button>
-              </td>
+              </td> -->
             </tr>
           <?php } ?>
         </tbody>

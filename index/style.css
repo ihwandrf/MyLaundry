@@ -4,6 +4,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+#iman {
+  color: #2580ea;
+}
+
 footer {
   background: #97dece;
   padding: 86px 0;
@@ -37,10 +42,12 @@ footer {
 }
 .mainreview {
   vertical-align: middle;
+  text-align: start;
   margin-right: 15%;
   margin-left: 15%;
-  background: url(src/img/vector1.png) no-repeat center;
+  /* background: url(src/img/vector1.png) no-repeat center; */
   background-size: 70%;
+  font-size: 36px;
 }
 #navbarNav {
   margin-right: 100px;
@@ -137,9 +144,9 @@ footer {
   position: relative;
 }
 .card-text {
-  margin: 20px;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin: 20px 0;
+  /* margin-right: 15%; */
+  /* margin-left: 15%; */
   text-align: left;
 }
 .name-job-review {
@@ -258,6 +265,13 @@ footer {
   border-color: transparent;
   margin-right: 15px;
 }
+
+.mainreview {
+  width: 95%;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mid-banner {
     width: 100%;
@@ -283,8 +297,44 @@ footer {
     bottom: 0;
     text-align: center;
   }
+
+  #navbarNav {
+    margin-right: 0px;
+  }
+
+  #home2 h1 {
+    font-size: 30px;
+  }
+
+  #home2 p {
+    font-size: 18px;
+    margin-bottom: 150px;
+  }
+
+  #home2 h1,
+  #home2 p {
+    margin-left: 0px;
+  }
+
+  .mainreview {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #cara-penggunaan-div {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .mainreview {
+    display: none;
+    font-size: 20px;
+  }
+
+  #iman {
+    color: #260f55;
+  }
+
   .home {
     margin: auto;
   }
@@ -310,7 +360,8 @@ footer {
   }
   .top-banner {
     width: 100%;
-    background: url(src/img/bg-cadangan.png) no-repeat center;
+    /* background: url(src/img/bg-cadangan.png) no-repeat center; */
+    background: url(../src/img/bghp3.jpg) no-repeat center;
     background-size: content;
     padding: 16.875rem 0 9.375rem;
   }
@@ -361,6 +412,23 @@ footer {
   }
   .carousel-control-prev-icon:after {
     font-size: 30px;
+  }
+
+  #navbarNav {
+    margin-right: 0px;
+  }
+
+  #home2 h1,
+  #home2 p {
+    margin-left: 0px;
+  }
+
+  #testi {
+    padding-bottom: 0px !important;
+  }
+
+  footer {
+    padding-left: 5px;
   }
 }
 

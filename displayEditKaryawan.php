@@ -118,7 +118,7 @@ if (isset($_REQUEST['id'])) {
                         showCancelButton: true,
                         confirmButtonColor: '#3085d6',
                         cancelButtonColor: '#d33',
-                        confirmButtonText: 'Ya, tambahkan!'
+                        confirmButtonText: 'Ya, ubah!'
                     }).then((result) => {
                         if (result.isConfirmed) {
                             $.ajax({
@@ -129,7 +129,7 @@ if (isset($_REQUEST['id'])) {
                                 success: function(data) {
                                     Swal.fire(
                                         "Berhasil!",
-                                        "Penambahan transaksi baru berhasil!",
+                                        "Perubahan data sukses!",
                                         "success"
                                     ).then(() => {
                                         window.location.reload();

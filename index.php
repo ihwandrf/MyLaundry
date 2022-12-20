@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../TUBES/index/style.css">
+  <link rel="stylesheet" href="index/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-lg-5 col-md-6">
             <h1 class="headerutama">Kebersihan Sebagian Dari
-              <span style="color: #2580EA;">Iman</span>
+              <span id="iman">Iman</span>
             </h1>
           </div>
           <div class="col-lg-8 col-md-8">
@@ -148,16 +148,16 @@
   <section id="home2" class="mt-3 container" style="margin-top: 5-rem;">
     <div class="container-fluid px-0 mid-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-md-6 ">
-            <h1 class=>Cara penggunaan aplikasi kami yang sangat mudah</h1>
-            <div class="mt-4">
-              <p class="md:text-center">
-                Aplikasi kami dapat di gunakan dari banyak kalangan karena family friendly, baik dari kalangan muda atau pun tua mudah dalam melakukan pemesanan
-              </p>
-            </div>
+        <!-- <div class="row"> -->
+        <div class="col-lg-5 col-md-6 " id="cara-penggunaan-div">
+          <h1 class="cara-penggunaan">Cara penggunaan aplikasi kami yang sangat mudah</h1>
+          <div class="mt-4">
+            <p class="md:text-center cara-penggunaan">
+              Aplikasi kami dapat di gunakan dari banyak kalangan karena family friendly, baik dari kalangan muda atau pun tua mudah dalam melakukan pemesanan
+            </p>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </div>
     </div>
@@ -219,7 +219,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="section-header text-center pb-5">
+          <div class="section-header text-center pb-2" id="testi">
             <h2 class="text-center">Testimoni
             </h2>
           </div>
@@ -338,7 +338,7 @@
         </div>
         <div class="col-5 col-md-3 col-lg-2 shadow">
           <div class="card profilecard text-black text-center pb-2 border-0">
-            <img alt="" class="card-profile" src="src/img/harrel.png">
+            <img alt="" class="card-profile" src="src/img/member6.jpg">
             <div class="card-body text-center">
               <div class="name-job-review text-center">
                 <p class="font-weight-bold mb-0 member-name">Dzikri Muhammad</p>

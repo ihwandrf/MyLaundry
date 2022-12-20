@@ -22,6 +22,14 @@ ON(p.status_pembayaran = sp.id_pembayaran)
 ORDER BY p.tanggal_masuk_pesanan; ";
 $hasil = $conn->query($sql);
 
+// Get user's name
+$email = $_SESSION['email'];
+$namasql = "SELECT nama FROM karyawan WHERE email = ?;";
+$hasilNama = $conn->prepare($namasql);
+$hasilNama->execute([$email]);
+
+$nama = $hasilNama->fetch();
+
 $no = 1;
 ?>
 
@@ -105,22 +113,22 @@ $no = 1;
         <div class="sub-menu">
           <div class="user-info">
             <img src="org1.jpeg" alt="" />
-            <h2>Jennie Kim</h2>
+            <h2><?php echo $nama['nama'] ?></h2>
           </div>
           <hr />
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> manage_accounts </span>
             <p>Edit Profile</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> settings </span>
             <p>Settings</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> contact_support </span>
             <p>Help & Support</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a class="sub-menu-link" id="logout">
             <span class="material-symbols-outlined"> logout </span>
             <p>Logout</p>
           </a>
@@ -319,6 +327,35 @@ $no = 1;
   <script>
     // Modal
     $(document).ready(function() {
+
+      // Logout
+      $("#logout").click(function() {
+        Swal.fire({
+          title: 'Apakah Anda yakin?',
+          text: "Anda akan keluar dari halaman ini!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, keluar saja!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            $.ajax({
+              url: "Logout.php",
+              type: "POST",
+              success: function() {
+                Swal.fire(
+                  'Logout berhasil!',
+                  'Anda akan keluar dari halaman karyawan.',
+                  'success'
+                ).then(() => {
+                  window.location.href = "login.php";
+                })
+              }
+            })
+          }
+        })
+      })
 
       $(document).on("click", ".edit", function() {
         const id = $(this).attr('id');

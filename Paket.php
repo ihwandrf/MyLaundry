@@ -14,7 +14,13 @@ $hasil = $conn->query($sql);
 
 $no = 1;
 
+// Get user's name
+$email = $_SESSION['email'];
+$namasql = "SELECT nama FROM karyawan WHERE email = ?;";
+$hasilNama = $conn->prepare($namasql);
+$hasilNama->execute([$email]);
 
+$nama = $hasilNama->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -44,39 +50,39 @@ $no = 1;
       <h2>MyLaundry</h2>
     </div>
     <div class="items">
-      <li>
+      <li onclick="pindahPage('dashboard.php')">
         <span class="material-icons"> pie_chart </span>
-        <a href="#" class="menu-text">Dashboard</a>
+        <a class="menu-text">Dashboard</a>
       </li>
       <li id="manajemen-li" onclick="dropManajemen()">
         <span class="material-symbols-outlined"> manage_accounts </span>
-        <a href="#" class="menu-text">Manajemen User</a>
+        <a class="menu-text">Manajemen User</a>
       </li>
       <div id="manajemen">
-        <div>
+        <div onclick="pindahPage('LihatKaryawan.php')">
           <span></span>
-          <a href="#">Karyawan</a>
+          <a>Karyawan</a>
         </div>
-        <div>
+        <div onclick="pindahPage('Admin.php')">
           <span></span>
-          <a href="#">Administrator</a>
+          <a>Administrator</a>
         </div>
       </div>
-      <li id="transaksi-li">
+      <li onclick="pindahPage('Transaksi.php')" id="transaksi-li">
         <span class="material-symbols-outlined"> payments </span>
-        <a href="#" class="menu-text">Transaksi</a>
+        <a class="menu-text">Transaksi</a>
       </li>
-      <li>
+      <li onclick="pindahPage('Paket.php')">
         <span class="material-symbols-outlined"> laundry </span>
-        <a href="#" class="menu-text">Paket Laundry</a>
+        <a class="menu-text">Paket Laundry</a>
       </li>
-      <li>
+      <li onclick="pindahPage('Customer.php')">
         <span class="material-symbols-outlined"> person </span>
-        <a href="#" class="menu-text">Customer</a>
+        <a class="menu-text">Customer</a>
       </li>
-      <li>
+      <li onclick="pindahPage('BuatLaporan.php')">
         <span class="material-symbols-outlined"> summarize </span>
-        <a href="#" class="menu-text">Laporan</a>
+        <a class="menu-text">Laporan</a>
       </li>
     </div>
   </section>
@@ -97,22 +103,22 @@ $no = 1;
         <div class="sub-menu">
           <div class="user-info">
             <img src="org1.jpeg" alt="" />
-            <h2>Jennie Kim</h2>
+            <h2><?php echo $nama['nama'] ?></h2>
           </div>
           <hr />
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> manage_accounts </span>
             <p>Edit Profile</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> settings </span>
             <p>Settings</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a href="TidakAda.php" class="sub-menu-link">
             <span class="material-symbols-outlined"> contact_support </span>
             <p>Help & Support</p>
           </a>
-          <a href="#" class="sub-menu-link">
+          <a class="sub-menu-link" id="logout">
             <span class="material-symbols-outlined"> logout </span>
             <p>Logout</p>
           </a>
@@ -238,6 +244,35 @@ $no = 1;
 
   <script>
     $(document).ready(function() {
+      // Logout
+      $("#logout").click(function() {
+        Swal.fire({
+          title: 'Apakah Anda yakin?',
+          text: "Anda akan keluar dari halaman ini!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, keluar saja!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            $.ajax({
+              url: "Logout.php",
+              type: "POST",
+              success: function() {
+                Swal.fire(
+                  'Logout berhasil!',
+                  'Anda akan keluar dari halaman karyawan.',
+                  'success'
+                ).then(() => {
+                  window.location.href = "login.php";
+                })
+              }
+            })
+          }
+        })
+      })
+
       // Edit
       $(document).on("click", ".edit", function() {
         const id = $(this).attr('id');
@@ -355,6 +390,12 @@ $no = 1;
     let manajemenDrop = document.getElementById("manajemen");
 
     // let x = window.matchMedia("(max-width: 769px)");
+
+    // Pindah Page
+    function pindahPage(namaPage) {
+      window.location.href = namaPage;
+    }
+
 
     function toggleMenu() {
       if (subMenu.style.maxHeight == "400px") {

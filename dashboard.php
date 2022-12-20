@@ -89,39 +89,39 @@ $no = 1;
       <h2>MyLaundry</h2>
     </div>
     <div class="items">
-      <li>
+      <li onclick="pindahPage('dashboard.php')">
         <span class="material-icons"> pie_chart </span>
-        <a href="#" class="menu-text">Dashboard</a>
+        <a class="menu-text">Dashboard</a>
       </li>
       <li id="manajemen-li" onclick="dropManajemen()">
         <span class="material-symbols-outlined"> manage_accounts </span>
-        <a href="#" class="menu-text">Manajemen User</a>
+        <a class="menu-text">Manajemen User</a>
       </li>
       <div id="manajemen">
         <div onclick="pindahPage('LihatKaryawan.php')">
-          <!-- <span></span> -->
+          <span></span>
           <a>Karyawan</a>
         </div>
         <div onclick="pindahPage('Admin.php')">
-          <!-- <span></span> -->
-          <a href="#">Administrator</a>
+          <span></span>
+          <a>Administrator</a>
         </div>
       </div>
       <li onclick="pindahPage('Transaksi.php')" id="transaksi-li">
         <span class="material-symbols-outlined"> payments </span>
-        <a href="#" class="menu-text">Transaksi</a>
+        <a class="menu-text">Transaksi</a>
       </li>
       <li onclick="pindahPage('Paket.php')">
         <span class="material-symbols-outlined"> laundry </span>
-        <a href="#" class="menu-text">Paket Laundry</a>
+        <a class="menu-text">Paket Laundry</a>
       </li>
       <li onclick="pindahPage('Customer.php')">
         <span class="material-symbols-outlined"> person </span>
-        <a href="#" class="menu-text">Customer</a>
+        <a class="menu-text">Customer</a>
       </li>
       <li onclick="pindahPage('BuatLaporan.php')">
         <span class="material-symbols-outlined"> summarize </span>
-        <a href="#" class="menu-text">Laporan</a>
+        <a class="menu-text">Laporan</a>
       </li>
     </div>
   </section>
@@ -210,10 +210,10 @@ $no = 1;
           </select>
           <label id="show" for="">entries</label>
         </div>
-        <div class="search">
+        <!-- <div class="search">
           <i class="fa fa-search"></i>
           <input type="text" placeholder="Search" name="" id="" />
-        </div>
+        </div> -->
       </div>
       <table width="100%">
         <thead>

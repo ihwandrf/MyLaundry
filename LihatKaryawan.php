@@ -236,7 +236,7 @@ $no = 1;
                   Edit
                 </button>
                 <button type="button" id="<?= $row['id_karyawan'] ?>" <?php if (!$_SESSION['admin']) {
-                                                                        if ($_SESSION['id_karyawan'] != $row['id_karyawan']) {
+                                                                        if ($_SESSION['id_karyawan'] != $row['id_karyawan'] || $_SESSION['id_karyawan'] == $row['id_karyawan']) {
                                                                           echo "disabled";
                                                                         }
                                                                       } ?> class="btn btn-outline-danger active aksi-btn font-kecil hapus">

@@ -252,7 +252,7 @@ $nama = $hasilNama->fetch();
                                                                                                                                               echo "disabled";
                                                                                                                                             } else {
                                                                                                                                               if ($_SESSION["id_karyawan"] != 1) {
-                                                                                                                                                if ($_SESSION["id_karyawan"] != $row['id_karyawan']) {
+                                                                                                                                                if ($_SESSION["id_karyawan"] != $row['id_karyawan'] || $_SESSION["id_karyawan"] == $row['id_karyawan']) {
                                                                                                                                                   echo "disabled";
                                                                                                                                                 }
                                                                                                                                               }

@@ -425,6 +425,9 @@ tbody tr td {
   transform: scale(1.1);
   transition: 0.5s;
 }
+#dt_length {
+  margin-left: 10px;
+}
 
 /* Ipad */
 @media screen and (max-width: 1209px) {
@@ -481,9 +484,17 @@ tbody tr td {
     width: 100%;
     border-collapse: collapse;
   }
+
+  #dt_length {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 477px) {
+  #dt_length {
+    margin-left: 0px;
+  }
+
   #interface .navigation {
     padding: 15px;
   }

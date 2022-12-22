@@ -33,6 +33,10 @@ $no = 1;
   <link rel="stylesheet" href="karyawan.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <!-- Data Tables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.css" />
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
   <title>Lihat Karyawan</title>
 </head>
 
@@ -202,12 +206,12 @@ $no = 1;
           </select>
           <label id="show" for="">entries</label>
         </div>
-        <!-- <div class="search">
+        <div class="search">
           <i class="fa fa-search"></i>
           <input type="text" placeholder="Search" name="" id="" />
-        </div> -->
+        </div>
       </div>
-      <table width="100%">
+      <table width="100%" id="">
         <thead>
           <tr>
             <td>No</td>
@@ -270,6 +274,10 @@ $no = 1;
   <script>
     // JQUERY
     $(document).ready(function() {
+      // datatables
+      $('#dt').DataTable();
+
+
       // Edit
       $(document).on("click", ".edit", function() {
         const id = $(this).attr('id');

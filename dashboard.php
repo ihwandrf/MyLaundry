@@ -68,6 +68,7 @@ $no = 1;
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="initial-scale=1.0"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -78,6 +79,12 @@ $no = 1;
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.15/sweetalert2.min.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <!-- Data Tables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.css" />
+
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.js"></script>
+
 
   <title>MyLaundry Dashboard</title>
 </head>
@@ -200,7 +207,7 @@ $no = 1;
     <div class="board">
       <p id="p-order">List Transaksi</p>
       <div class="show-search">
-        <div>
+        <!-- <div>
           <label id="show" for="">Show</label>
           <select name="jumlah-data" id="jumlah-data">
             <option value="10">10</option>
@@ -209,13 +216,13 @@ $no = 1;
             <option value="100">100</option>
           </select>
           <label id="show" for="">entries</label>
-        </div>
+        </div> -->
         <!-- <div class="search">
           <i class="fa fa-search"></i>
           <input type="text" placeholder="Search" name="" id="" />
         </div> -->
       </div>
-      <table width="100%">
+      <table width="100%" id="dt" class="">
         <thead>
           <tr>
             <td>No</td>
@@ -261,6 +268,10 @@ $no = 1;
   <script>
     // logout
     $(document).ready(function() {
+      // Searching dengan datatables
+      $('#dt').DataTable();
+
+
       $("#logout").click(function() {
         Swal.fire({
           title: 'Apakah Anda yakin?',

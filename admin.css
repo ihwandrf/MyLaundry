@@ -194,6 +194,11 @@ body {
   object-fit: cover;
 }
 
+.sub-menu {
+  position: relative;
+  z-index: 200;
+}
+
 .sub-menu hr {
   border: 0;
   height: 1px;
@@ -432,6 +437,10 @@ tbody tr td {
   transition: 0.5s;
 }
 
+#dt_length {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 1209px) {
   .values .val-box {
     width: auto;
@@ -487,6 +496,10 @@ tbody tr td {
     width: 100%;
     border-collapse: collapse;
   }
+
+  #dt_length {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 477px) {
@@ -537,6 +550,10 @@ tbody tr td {
 
   .transaksi-tambah {
     width: 94%;
+  }
+
+  #dt_length {
+    margin-left: 0px;
   }
 }
 
